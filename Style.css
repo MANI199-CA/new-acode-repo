@@ -1,0 +1,111 @@
+#boton1{
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Degradado coqueto */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#boton1:hover {
+    transform: scale(1.05); /* Se hace un poquito más grande */
+    box-shadow: 0 6px 20px rgba(255, 65, 108, 0.6);
+}
+
+#boton1:active {
+    transform: scale(0.98); /* Efecto de que se hunde al picarle */
+}
+
+
+
+#boton{
+  
+    background-color: #1a1a1a;
+    color: #00ffcc; /* Verde/Azul neón */
+    border: 2px solid #00ffcc;
+    padding: 12px 28px;
+    margin-top: 25px ;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+/* Cuando pasas el mouse */
+#boton:hover {
+    background-color: #00ffcc;
+    color: #1a1a1a;
+    box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+    transform: translateY(-2px); /* Flota un poquito */
+}
+
+/* Cuando lo presionas */
+#boton:active {
+    transform: translateY(1px);
+}
+
+
+#contenedor{
+  background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Degradado coqueto */;
+  border: 15px solid #FFA500;
+  border-radius: 50px;
+  margin: 15px;
+  padding: 50px;
+  
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los inputs y el botón automáticamente */
+    
+
+
+}
+
+input {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.85); /* Blanco sutilmente traslúcido */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    color: #2c3e50; /* Texto oscuro para que se lea perfecto al escribir */
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* El truco coqueto: cuando el usuario da clic para escribir */
+input:focus {
+    background-color: #ffffff; /* Se vuelve blanco sólido */
+    border-color: #00ffcc; /* Combina con el borde neón de tu botón Porcentaje */
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+/* Para cambiar el color del texto de guía (placeholder) */
+input::placeholder {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+#avs {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff; /* Blanco puro para un contraste perfecto sobre el degradado */
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 10px 15px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil al texto para que "flote" */
+}

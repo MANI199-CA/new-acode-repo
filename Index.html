@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input id='servicio' placeholder="ingresa el servicio"></input>
+  <button id="boton1" onclick="buscarServicio()">buscar</button>
+  <p id="parrafo"> </p>
+  <button onclick="borrarP()">borrar</button>
+  <p id="carrito"></p>
+  <button id="carrito_btn" onclick="verCarrito()">carrito</button>
+  
+  
+  <div id="contenedor">
+      <input type="text" placeholder="ingresa bateador" id="bateador"> </input>
+    <input type="number" placeholder="ingresa nuevo hit" id="nuevo_hit"> </input>
+      <input type="number" placeholder="ingresa turnos al bat" id="nuevo_ab"> </input>
+    <button id="boton" onclick="calcularAVS()"> PORCENTAJE </button>
+    <p id="avs"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
